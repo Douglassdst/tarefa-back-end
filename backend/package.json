@@ -22,12 +22,13 @@
    "scripts": {
       "build": "tsc -p .",
       "dev": "nodemon src/index.ts",
-      "start": "cd dist && node src/index.js"
+      "start": "cd dist && node src/index.js",
+      "heroku-postbuild": "npm run build"
    },
 
    "engines": {
-      "node": "14.17.4",
-      "npm": "5.6.0"
-    }
+      "npm": "5.6.0",
+      "node": "8.10.0"
+   }
 
 }
